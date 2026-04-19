@@ -6,19 +6,7 @@
 struct Subject subjects[MAX_SUBJECTS];
 int subjectCount = 0;
 
-int isValidFloat(char *str)
-{
-    char *end;
-    strtod(str, &end);
-    return !(end == str || *end != '\0');
-}
 
-int isValidInt(char *str)
-{
-    char *end;
-    strtol(str, &end, 10);
-    return !(end == str || *end != '\0');
-}
 
 
 int checkCancel(char *input)
